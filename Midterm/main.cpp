@@ -90,7 +90,7 @@ public:
             
             if (students[middle].id == searchID) {
                 cout << "Found student!" << endl;
-                return middle;  // Return index.
+                return middle;  // Return 
             }
             else if (students[middle].id < searchID) {
                 left = middle + 1;
@@ -101,10 +101,10 @@ public:
         }
         
         cout << "Student not found!" << endl;
-        return -1;  // Not found.
+        return -1;  
     }
     
-    // Save student data to file.
+    // Save student data 
     void saveToFile() {
         ofstream file("students.txt");
         
@@ -216,7 +216,7 @@ void showMenu() {
 
 // Main function where program execution begins.
 int main() {
-    SimpleManager manager;
+    Manager manager;
     int choice;
     
     do {
