@@ -141,7 +141,7 @@ public:
     }
 };
 
-// Function to show data types and their sizes.
+// show data types and their sizes.
 void showDataTypes() {
     cout << "\n--- Data Types and Sizes ---" << endl;
     cout << "int size: " << sizeof(int) << " bytes" << endl;
@@ -165,7 +165,7 @@ void showPointers() {
     cout << "After changing through pointer, number is now: " << number << endl;
 }
 
-// Function to demonstrate arrays.
+// demonstrate arrays.
 void showArrays() {
     cout << "\n--- Array Example ---" << endl;
     int grades[5] = {85, 90, 78, 92, 88};
@@ -176,7 +176,7 @@ void showArrays() {
     }
     cout << endl;
     
-    // Using a pointer to access the array.
+    // access the array.
     int* ptr = grades;
     cout << "Array elements using a pointer: ";
     for (int i = 0; i < 5; i++) {
@@ -185,7 +185,7 @@ void showArrays() {
     cout << endl;
 }
 
-// Function to demonstrate string operations.
+// string operations.
 void showStrings() {
     cout << "\n--- String Example ---" << endl;
     string name1 = "Ayush";
