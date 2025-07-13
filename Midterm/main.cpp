@@ -64,9 +64,9 @@ public:
         cout << "Total: " << count << " students\n" << endl;
     }
     
-    // Binary search for student by ID.
+    // search for student by ID.
     int binarySearch(int searchID) {
-        // Sort by ID (Bubble Sort for simplicity).
+        // Sort ID
         for (int i = 0; i < count - 1; i++) {
             for (int j = 0; j < count - i - 1; j++) {
                 if (students[j].id > students[j + 1].id) {
@@ -150,22 +150,21 @@ void showDataTypes() {
     cout << "Student size: " << sizeof(Student) << " bytes" << endl;
 }
 
-// Function to show how pointers work.
+
 void showPointers() {
     cout << "\n--- Pointer Example ---\n" << endl;
     int number = 42;
-    int* ptr = &number;  // Pointer to number.
+    int* ptr = &number;  
     
     cout << "Number: " << number << endl;
     cout << "Address of number: " << &number << endl;
     cout << "Pointer value (the address it holds): " << ptr << endl;
     cout << "Value pointed to (using *): " << *ptr << endl;
     
-    *ptr = 100;  // Change value via pointer.
+    *ptr = 100;  // Change value 
     cout << "After changing through pointer, number is now: " << number << endl;
 }
 
-// demonstrate arrays.
 void showArrays() {
     cout << "\n--- Array Example ---" << endl;
     int grades[5] = {85, 90, 78, 92, 88};
@@ -176,7 +175,6 @@ void showArrays() {
     }
     cout << endl;
     
-    // access the array.
     int* ptr = grades;
     cout << "Array elements using a pointer: ";
     for (int i = 0; i < 5; i++) {
