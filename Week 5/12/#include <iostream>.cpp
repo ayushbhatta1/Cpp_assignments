@@ -1,3 +1,4 @@
+// Q.12
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -18,7 +19,7 @@ public:
     Employee(int id, string n, int a, string jr, string mhs, double ps)
         : employeeId(id), name(n), age(a), jobRole(jr), mentalHealthStatus(mhs), productivityScore(ps) {}
 
-    // Display employee information with aligned formatting
+    // Display employee information
     void display() const {
         cout << left
              << setw(15) << "Employee ID: " << employeeId << "\n"
@@ -57,16 +58,16 @@ int main() {
         double productivityScore;
 
         try {
-            // Parse Employee ID
+            // Employee ID
             getline(ss, token, ',');
             if (token.empty()) throw runtime_error("Empty Employee ID");
             employeeId = stoi(token);
 
-            // Parse Name
+            // Name
             getline(ss, token, ',');
             name = token;
 
-            // Parse Age
+            // Age
             getline(ss, token, ',');
             if (token.empty()) throw runtime_error("Empty Age");
             age = stoi(token);
@@ -75,7 +76,7 @@ int main() {
             getline(ss, token, ',');
             getline(ss, token, ',');
 
-            // Parse Job Role
+            // Job Role
             getline(ss, token, ',');
             jobRole = token;
 
@@ -84,12 +85,12 @@ int main() {
             getline(ss, token, ',');
             getline(ss, token, ',');
 
-            // Parse Productivity Score
+            // Productivity Score
             getline(ss, token, ',');
             if (token.empty()) throw runtime_error("Empty Productivity Score");
             productivityScore = stod(token);
 
-            // Parse Mental Health Status
+            // Mental Health Status
             getline(ss, token, ',');
             mentalHealthStatus = token;
 
